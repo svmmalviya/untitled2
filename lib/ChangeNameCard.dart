@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'BGImage.dart';
+import 'bgImage.dart';
 
 class ChangeNameCard extends StatelessWidget {
   const ChangeNameCard({

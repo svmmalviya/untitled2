@@ -6,7 +6,7 @@ class MyDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: [
+        children: const [
           UserAccountsDrawerHeader(
               accountName: Text("Shiv"),
               accountEmail: Text("slohar420@gmail.com"),
