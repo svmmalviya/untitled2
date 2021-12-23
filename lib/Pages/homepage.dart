@@ -63,6 +63,8 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           setState(() {
             myText = _mainController.text;
+            //Navigator.pushNamed(context, "/login");
+            Navigator.pop(context);
           });
         },
         // ignore: prefer_const_constructors
