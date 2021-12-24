@@ -5,7 +5,7 @@ import 'package:untitled2/Pages/loginpage.dart';
 void main() {
   runApp(MaterialApp(
     title: 'Material App',
-    home: LoginPage(),
+    home: const LoginPage(),
     theme: ThemeData(primarySwatch: Colors.purple),
     // routes: {
     //   "/login": (context) => const LoginPage(),
