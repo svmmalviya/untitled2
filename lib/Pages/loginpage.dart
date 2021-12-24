@@ -1,8 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
-import 'package:untitled2/BGImage.dart';
-import 'package:untitled2/Pages/homepage.dart';
+import 'package:untitled2/Widgets/BGImage.dart';
+import 'package:untitled2/utils/Constants.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -65,8 +65,8 @@ class _LoginPageState extends State<LoginPage> {
                               //     context,
                               //     MaterialPageRoute(
                               //         builder: (context) => const HomePage()));
-
-                              Navigator.pushNamed(context, "/home");
+                              Constants.pref.setBool("loggedin", true);
+                              Navigator.pushNamed(context, "home");
                             },
                             child: Text("Sign In"),
                             color: Colors.orange,

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:untitled2/drawer.dart';
 import 'package:http/http.dart' as http;
+import 'package:untitled2/Widgets/drawer.dart';
 import 'dart:convert';
+
+import 'package:untitled2/utils/Constants.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -63,8 +65,10 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           setState(() {
             myText = _mainController.text;
-            //Navigator.pushNamed(context, "/login");
-            Navigator.pop(context);
+
+            Constants.pref.setBool("loggedin", false);
+            Navigator.pushNamed(context, "login");
+            //Navigator.pop(context);
           });
         },
         // ignore: prefer_const_constructors
